@@ -4,7 +4,7 @@ Quotes is a web application that collects information about different quotes fro
 
 ## Author
 
-
+Rosine Uwamariya
 
 ## Description
 
