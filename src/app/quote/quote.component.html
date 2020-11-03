@@ -1,0 +1,28 @@
+<div class="container">
+    <h2></h2>
+    <hr>
+    <div class="row">
+        <div class="col-md-6">
+            <app-quote-form (addQuote)="addNewQuote($event)">
+            </app-quote-form>
+        </div>
+
+        <div class="col-md-6">
+            <div *ngFor='let quote of quotes; let i = index'>
+                <div>
+                    <li appStrikethrough *ngIf="highestUpvote()===quote.upvotes && quote.upvotes>0">{{quote.quote}}</li>
+                    <li *ngIf="highestUpvote()!==quote.upvotes || quote.upvotes===0">{{quote.quote}}</li>
+                    <p id="{{i}}"> posted on {{quote.completeDate|date|uppercase}}</p>
+
+                    <button class="btn btn-outline-primary" (click)="upvote(i)" style="margin-right: 1%">Upvote</button>
+                    <button class="btn btn-outline-info" (click)="downvote(i)" style="margin-right: 1%">Downvote</button>
+                    <button (click)='toggleDetails(i)' class="btn btn-primary">Show Author</button><br><br>
+
+                    <div *ngIf='quote.showAuthor'>
+                        <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event, i)'></app-quote-detail>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

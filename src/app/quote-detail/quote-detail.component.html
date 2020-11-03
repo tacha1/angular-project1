@@ -1,0 +1,11 @@
+<div class="card-body">
+
+    <p> Author:{{quote.author}}</p>
+    <p> Publisher:{{quote.person}}</p>
+    <p>Lasted for {{quote.completeDate|dateCount}} days</p>
+    <p>Upvotes:{{quote.upvotes}}</p>
+    <p>Downvotes:{{quote.downvotes}}</p>
+
+ <button (click)='quoteDelete(true)' class="btn btn-outline-danger" style="margin-right: 1%">Delete
+                        Quote</button>
+</div>
