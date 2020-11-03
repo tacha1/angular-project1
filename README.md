@@ -41,7 +41,7 @@ For any issues or questions, ideas or concern, please contact me on my e-mail: u
 
 ### License
 
-MIT license
+
 
 Copyright (c) 2020 Moringa School
 
