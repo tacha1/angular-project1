@@ -1,4 +1,7 @@
 .container{
-    background-color: lightblue;
+    background-color: rgb(234, 241, 243);
     color: black;
+}
+.col-md-6{
+    background-color: rgb(196, 209, 209);
 }
