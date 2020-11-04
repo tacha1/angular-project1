@@ -1,9 +1,9 @@
 .image{
-    background-image: url("../assets/image2.jpeg");
+    background-image: url("../assets/imge.jpeg");
     padding: 100px;
     background-repeat: no-repeat;
     background-size: cover;
 }
 body{
-    background-color: lightblue;
+    background-color:lightblue;
 }
